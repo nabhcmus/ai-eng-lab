@@ -7,7 +7,10 @@ authors = [
     { name = "nabhcmus", email = "nabsubyt1@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "openai>=3.24.0",
+    "pydantic>=2.13.5",
+]
 
 [project.scripts]
 ai-eng-lab = "ai_eng_lab:main"
