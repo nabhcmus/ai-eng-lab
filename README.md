@@ -21,7 +21,7 @@ uv --version
 1. Clone repository và đi vào thư mục dự án:
 
 	```bash
-	git clone <URL_REPOSITORY>
+	git clone https://github.com/nabhcmus/ai-eng-lab.git
 	cd ai-eng-lab
 	```
 
