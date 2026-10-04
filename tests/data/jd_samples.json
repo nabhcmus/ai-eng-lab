@@ -1,0 +1,87 @@
+[
+  {
+    "id": "jd-001",
+    "text": "Senior Machine Learning Engineer\nWe are looking for a Senior Machine Learning Engineer to build and operate recommendation and ranking systems. You will productionize models, partner with product teams, and improve model quality at scale.\nRequirements:\n- 5+ years building machine learning systems\n- Strong Python and SQL\n- Production experience with PyTorch and Docker\n- Experience with AWS and Kubernetes",
+    "expected": {
+      "title": "Senior Machine Learning Engineer",
+      "skills": [
+        "Python",
+        "SQL",
+        "PyTorch",
+        "Docker",
+        "AWS",
+        "Kubernetes"
+      ]
+    }
+  },
+  {
+    "id": "jd-002",
+    "text": "Computer Vision Engineer\nOur perception team is hiring a Computer Vision Engineer to develop real-time image understanding for autonomous devices. The role covers data pipelines, model training, and deployment to edge hardware.\nWhat you bring:\n- Python and C++\n- OpenCV and computer vision fundamentals\n- Deep learning with TensorFlow\n- Experience with NVIDIA CUDA and Linux",
+    "expected": {
+      "title": "Computer Vision Engineer",
+      "skills": [
+        "Python",
+        "C++",
+        "OpenCV",
+        "computer vision fundamentals",
+        "Deep learning",
+        "TensorFlow",
+        "NVIDIA CUDA",
+        "Linux"
+      ]
+    }
+  },
+  {
+    "id": "jd-003",
+    "text": "Natural Language Processing Engineer\nJoin our language intelligence group as an NLP Engineer. You will train and evaluate large language models, build retrieval-augmented generation services, and turn research prototypes into reliable APIs.\nRequired skills:\n- Python and PyTorch\n- Hugging Face Transformers\n- NLP and transformer architectures\n- Experience with REST APIs and Git",
+    "expected": {
+      "title": "Natural Language Processing Engineer",
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Hugging Face Transformers",
+        "NLP",
+        "transformer architectures",
+        "REST APIs",
+        "Git"
+      ]
+    }
+  },
+  {
+    "id": "jd-004",
+    "text": "MLOps Engineer\nWe need an MLOps Engineer to make model delivery repeatable and observable. You will own training and serving infrastructure, CI/CD for machine learning, and monitoring for data and model drift.\nKey qualifications:\n- Python and Bash\n- Kubernetes and Docker\n- Terraform and GitHub Actions\n- MLflow and Prometheus\n- Experience with Google Cloud Platform",
+    "expected": {
+      "title": "MLOps Engineer",
+      "skills": [
+        "Python",
+        "Bash",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "GitHub Actions",
+        "MLflow",
+        "Prometheus",
+        "Google Cloud Platform"
+      ]
+    }
+  },
+  {
+    "id": "jd-005",
+    "text": "Generative AI Engineer\nA research-driven product team is seeking a Generative AI Engineer to ship assistants powered by foundation models. You will design prompt and evaluation pipelines, fine-tune models, and build safe, scalable inference services.\nQualifications:\n- Python and JavaScript\n- OpenAI API and LangChain\n- Retrieval-augmented generation and vector databases\n- Experience with fine-tuning and LLM evaluation\n- FastAPI and PostgreSQL",
+    "expected": {
+      "title": "Generative AI Engineer",
+      "skills": [
+        "Python",
+        "JavaScript",
+        "OpenAI API",
+        "LangChain",
+        "Retrieval-augmented generation",
+        "Vector databases",
+        "Fine-tuning",
+        "LLM evaluation",
+        "FastAPI",
+        "PostgreSQL"
+      ]
+    }
+  }
+]

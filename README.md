@@ -1,4 +1,6 @@
-# ai-eng-lab
+curl -X POST http://127.0.0.1:8000/extract ^
+  -H "Content-Type: application/json" ^
+  -d "{\"text\":\"Senior AI Engineer cần Python, PyTorch và Docker\"}"# ai-eng-lab
 
 Một dự án Python tối giản để thực hành quy trình phát triển có kiểm tra tự động. Dự án sử dụng [uv](https://docs.astral.sh/uv/) để quản lý môi trường và phụ thuộc, [Ruff](https://docs.astral.sh/ruff/) để format/lint, và `pytest` để chạy test.
 
@@ -46,6 +48,45 @@ uv run ruff format .
 uv run ruff check . --fix
 uv run pytest
 ```
+
+## Đánh giá trích xuất JD
+
+Bộ eval đầu tiên nằm trong [`tests/data/jd_samples.json`](tests/data/jd_samples.json),
+gồm 5 JD AI Engineer được gán nhãn thủ công cho `title` và `skills`. Chạy evaluator
+với model cục bộ đang cấu hình:
+
+```bash
+uv run python scripts/eval_jd.py
+```
+
+Script in JSON report với tỷ lệ đúng riêng cho từng trường. `title` được so sánh
+không phân biệt hoa thường và khoảng trắng; `skills` được so sánh như một tập hợp
+không phân biệt hoa thường, nhưng phải khớp đầy đủ (không thiếu hoặc thừa kỹ năng).
+
+## API
+
+Khởi động API bằng FastAPI và Uvicorn:
+
+```bash
+uv run uvicorn ai_eng_lab.api:app --reload
+```
+
+Kiểm tra health:
+
+```bash
+curl http://127.0.0.1:8000/health
+```
+
+Trích xuất JD:
+
+```bash
+curl -X POST http://127.0.0.1:8000/extract ^
+  -H "Content-Type: application/json" ^
+  -d "{\"text\":\"Senior AI Engineer cần Python, PyTorch và Docker\"}"
+```
+
+API docs tương tác có sẵn tại `http://127.0.0.1:8000/docs`. Endpoint `POST /extract`
+trả về `JobPosting`; request bắt buộc có `text` và tùy chọn `model`.
 
 Trong CI, format được kiểm tra ở chế độ không sửa file:
 
